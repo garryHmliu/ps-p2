@@ -8,12 +8,16 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/garry-p1",
         "index": "apps/garry-p1/src/index.html",
         "main": "apps/garry-p1/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/garry-p1/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -22,7 +26,10 @@
             "input": "apps/garry-p1/public"
           }
         ],
-        "styles": ["apps/garry-p1/src/styles.scss"],
+        "styles": [
+          "apps/garry-p1/src/styles.scss",
+          "@angular/material/prebuilt-themes/azure-blue.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -75,7 +82,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/garry-p1/jest.config.ts"
       }
@@ -87,6 +96,36 @@
         "port": 4200,
         "spa": true
       }
+    },
+    "build-and-serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nx build garry-p1",
+          "nx serve garry-p1"
+        ]
+      },
+      "parallel": false
+    },
+    "build:ios": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx cap sync ios",
+          "npx cap copy ios"
+        ]
+      },
+      "parallel": false
+    },
+    "build:android": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx cap sync android",
+          "npx cap copy android"
+        ]
+      },
+      "parallel": false
     }
   }
 }

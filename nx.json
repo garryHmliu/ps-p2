@@ -72,6 +72,19 @@
       "linter": "eslint",
       "style": "scss",
       "unitTestRunner": "jest"
+    },
+    "@nx/angular:component": {
+      "prefix": "gy",
+      "style": "scss",
+      "inlineStyle": true,
+      "inlineTemplate": true
+    },
+    "@nx/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "style": "scss",
+      "inlineStyle": true,
+      "inlineTemplate": true
     }
   }
 }

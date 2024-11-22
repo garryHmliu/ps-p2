@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ps-p2-mobile</string>
+    <string name="title_activity_main">ps-p2-mobile</string>
+    <string name="package_name">com.psp2.practice</string>
+    <string name="custom_url_scheme">com.psp2.practice</string>
+</resources>
