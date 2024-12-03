@@ -9,7 +9,7 @@ const config: CapacitorConfig = {
   },
   android: {
     path: 'apps/android'
-  }
+  },
 };
 
 export default config;

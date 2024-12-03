@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ps-p2/button": ["libs/component/src/index.ts"]
+      "@ps-p2/button": ["libs/component/src/index.ts"],
+      "@ps-p2/my-first-plugin": ["libs/capacitor-plugin/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

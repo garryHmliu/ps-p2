@@ -74,8 +74,8 @@
       "unitTestRunner": "jest"
     },
     "@nx/angular:component": {
-      "prefix": "gy",
       "style": "scss",
+      "prefix": "gy",
       "inlineStyle": true,
       "inlineTemplate": true
     },

@@ -1,7 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "com.psp2.practice"
+
+  namespace "com.psp2.practice"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "com.psp2.practice"
@@ -43,6 +44,7 @@ dependencies {
 }
 
 apply from: 'capacitor.build.gradle'
+apply plugin: 'org.jetbrains.kotlin.android'
 
 try {
     def servicesJSON = file('google-services.json')

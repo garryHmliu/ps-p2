@@ -111,6 +111,7 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
+          "nx build garry-p1",
           "npx cap sync ios",
           "npx cap copy ios"
         ]
@@ -121,6 +122,7 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
+          "nx build garry-p1",
           "npx cap sync android",
           "npx cap copy android"
         ]
